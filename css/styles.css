@@ -283,6 +283,61 @@ body {
     fill: var(--white-background)
 }
 
+/* formularz */
+
+.newsletter-box {
+    margin-left: 70px;
+}
+
+.newsletter {
+    font-weight: 700;
+    color: var(--white-background);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+}
+
+.newsletter-contact {
+    display: block;
+    align-items: flex-end;
+}
+
+.box-email {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--light-color);
+    font-size: 16px;
+    padding-left: 16px;
+    cursor: text;
+}
+
+.news-btn {
+    width: 200px;
+    height: 50px;
+    color: var(--white-background);
+    background-color: var(--blue-accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 150, 243, 1);
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.newsletter-icon {
+    color: var(--white-background);
+    fill: var(--white-background);
+    position: relative;
+    left: 20px;
+    top: 6px;
+}
+
 /* MAIN PAGE */
 /* button with background */
 
@@ -766,4 +821,167 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-header {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: var(--black-logo);
+}
+
+.fieldset {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: var(--white-background);
+}
+
+.fieldset-comment {
+    width: 448px;
+    min-height: 120px;
+    border-radius: 4px;
+    margin-top: 4px;
+    display: flex;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+}
+
+.label-icon {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    padding: 12px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+
+.fieldset input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    width: 406px;
+    position: absolute;
+    height: 40px;
+    padding-left: 42px;
+}
+
+.input-comment {
+    border: 0;
+    background-color: transparent;
+    min-width: 432px;
+    max-width: 432px;
+    position: absolute;
+    min-height: 108px;
+    max-height: 108px;
+    top: 0px;
+    left: 0px;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.label-checkbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.modal-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 30px;
+    color: var(--white-background);
+    background-color: var(--blue-accent);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-button {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-legal {
+    margin: 0 4px;
+}
+
+.checkbox-title {
+    margin-right: 4px;
+}
+
+.checkbox-window {
+    color: var(--white-background);
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.checkbox-svg {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.input:focus,
+.label textarea:hover,
+.label textarea:focus,
+.fieldset input:focus+svg,
+.fieldset-comment:hover,
+.fieldset-comment:focus-within {
+    fill: var(--blue-accent);
+    border-color: var(--blue-accent);
+}
+
+.fieldset input:focus-visible,
+.fieldset-comment textarea:focus-visible {
+    outline: none;
+}
+
+.label-checkbox:checked {
+    display: block;
+    opacity: 1;
+}
+
+.input-comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+}
+
+.label-checkbox input:checked~.checkbox-window .checkbox-svg {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 54px;
+}
+
+.checkbox-svg {
+    display: none;
+    opacity: 0;
+    fill: var(--blue-accent);
 }
