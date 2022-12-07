@@ -838,6 +838,7 @@ body {
     width: 528px;
     min-height: 581px;
     background-color: var(--white-background);
+    /* padding: 40px; */
 }
 
 .close-btn {
@@ -850,6 +851,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    /* padding: 6px; */
 }
 
 .is-hidden {
@@ -863,6 +865,9 @@ body {
     font-size: 20px;
     text-align: center;
     color: var(--black-logo);
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fieldset {
@@ -872,6 +877,9 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     fill: var(--white-background);
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fieldset-comment {
@@ -894,9 +902,13 @@ body {
 
 .label-icon {
     display: flex;
-    width: 18px;
-    height: 18px;
     padding: 12px;
+    color: var(--black-logo);
+}
+
+.close-icon {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .label {
