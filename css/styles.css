@@ -837,21 +837,8 @@ body {
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color: var(--white-background);
-    /* padding: 40px; */
-}
-
-.close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--white-background);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-    /* padding: 6px; */
+    background-color: red;
+    padding: 8px;
 }
 
 .is-hidden {
@@ -860,30 +847,62 @@ body {
     pointer-events: none;
 }
 
+.cls-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-background);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #2196F3;
+    padding: 6px;
+}
+
+.close-icon {
+    margin: auto;
+}
+
 .modal-header {
     font-weight: 700;
     font-size: 20px;
     text-align: center;
     color: var(--black-logo);
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    width: 448px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+
+.inputs {
+    background-color: yellow;
+    width: 448px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .fieldset {
-    display: flex;
-    align-items: center;
-    margin-top: 4px;
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
+    /* margin-top: 4px; */
     box-sizing: border-box;
     border-radius: 4px;
     fill: var(--white-background);
-    margin-top: 12px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-top: 12px; */
+    background-color: brown;
+    /* background-color: yellow; */
 }
 
 .fieldset-comment {
-    width: 448px;
+    width: 100%;
     min-height: 120px;
     border-radius: 4px;
     margin-top: 4px;
@@ -893,39 +912,34 @@ body {
 }
 
 .label {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 1);
+    font-weight: 400;
+    /* font-size: 12px;
+    line-height: 14px; */
+    letter-spacing: 0.01em;
+    background-color: #2196F3;
 }
 
 .label-icon {
     display: flex;
-    padding: 12px;
-    color: var(--black-logo);
-}
-
-.close-icon {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    /* padding: 12px; */
+    fill: var(--black-logo);
+    background-color: red;
 }
 
 .fieldset input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     background-color: transparent;
-    width: 406px;
+    width: 448px;
     position: absolute;
     height: 40px;
     padding-left: 42px;
+    /* background-color: #2196F3; */
 }
 
 .input-comment {
