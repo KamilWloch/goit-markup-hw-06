@@ -837,7 +837,7 @@ body {
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color: red;
+    background-color: var(--white-background);
     padding: 8px;
 }
 
@@ -860,7 +860,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    background-color: #2196F3;
     padding: 6px;
 }
 
@@ -873,32 +872,31 @@ body {
     font-size: 20px;
     text-align: center;
     color: var(--black-logo);
-    /* margin-top: 70px; */
     width: 448px;
     margin-top: 2px;
     margin-left: auto;
     margin-right: auto;
-    background-color: green;
 }
 
 .inputs {
-    background-color: yellow;
     width: 448px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.form-field {
+    width: 448px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+}
+
 .fieldset {
     width: 100%;
-    /* display: flex;
-    align-items: center; */
-    /* margin-top: 4px; */
+    height: 40px;
     box-sizing: border-box;
     border-radius: 4px;
     fill: var(--white-background);
-    /* margin-top: 12px; */
-    background-color: brown;
-    /* background-color: yellow; */
 }
 
 .fieldset-comment {
@@ -907,28 +905,24 @@ body {
     border-radius: 4px;
     margin-top: 4px;
     display: flex;
-    position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .label {
-    /* margin-top: 10px; */
     font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 1);
     font-weight: 400;
-    /* font-size: 12px;
-    line-height: 14px; */
     letter-spacing: 0.01em;
-    background-color: #2196F3;
+    margin-bottom: 4px;
 }
 
 .label-icon {
     display: flex;
-    /* padding: 12px; */
     fill: var(--black-logo);
-    background-color: red;
+    margin-top: 11px;
+    margin-left: 12px;
 }
 
 .fieldset input {
@@ -939,7 +933,6 @@ body {
     position: absolute;
     height: 40px;
     padding-left: 42px;
-    /* background-color: #2196F3; */
 }
 
 .input-comment {
@@ -947,7 +940,6 @@ body {
     background-color: transparent;
     min-width: 432px;
     max-width: 432px;
-    position: absolute;
     min-height: 108px;
     max-height: 108px;
     top: 0px;
@@ -962,7 +954,7 @@ body {
 .label-checkbox {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 14px;
 }
 
